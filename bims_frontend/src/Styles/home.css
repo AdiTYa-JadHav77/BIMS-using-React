@@ -1,0 +1,116 @@
+body{
+    background-color: cadetblue;
+}
+.card-body{
+    color: black;
+}
+
+
+.input{width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.book-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  
+  .author{
+    width:209px;
+    height: 50px;
+    margin: 9px 15px 28px 5px;
+    padding: 14px 30px 13px 22px;
+    border-radius: 2px;
+    border: solid 1px #cacfd8;
+}  
+
+/* Style for the navbar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar .brand {
+    font-size: 20px;
+    
+}
+
+/* CSS for book item */
+.book-item {
+    position: relative;
+  }
+  
+  .book-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+  }
+  
+  .book-icons i {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .book-item:hover .book-icons {
+    visibility: visible;
+  }
+
+.delete-button,
+.edit-button {
+  display: none;
+}
+
+/* Show delete and edit buttons on card hover */
+.card:hover .delete-button,
+.card:hover .edit-button {
+  display: inline-block;
+}
+
+.card{
+  width: 18rem; 
+  padding: 10px; 
+  margin-bottom: 50px; 
+}
+
+@media only screen and (max-width:600px) {
+  .box{
+    
+    width: 18rem; 
+    padding: 10px; 
+    margin-bottom: 50px; 
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack elements vertically for smaller screens */
+  .book-details-content {
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .D_img {
+    width: 100%; /* Make the image take up the full width of the container */
+    max-width: 300px; /* Limit the maximum image width */
+  }
+}
+  
+
