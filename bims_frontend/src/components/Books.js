@@ -11,24 +11,21 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 
-
-
-
-
-
 // Model css
 const customStyles = {
     content: {
+      position: 'fixed',
       top: '50%',
       left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
-      width:" 400px",
-      height: "550px"
-    },
-};
+      width: '400px',   
+      height: '550px',  
+      overflowY: 'auto', 
+      padding: '20px',
+        },
+  };
+  
+  
 
 class Books extends React.Component {
     constructor() {
